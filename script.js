@@ -200,29 +200,127 @@
 // },0)
 // console.log("after timeout")
 
-const name=document.querySelector("#name")
-const btn=document.querySelector(".btn")
-const list=document.querySelector(".list")
+// const name=document.querySelector("#name")
+// const btn=document.querySelector(".btn")
+// const list=document.querySelector(".list")
 
-btn.addEventListener("click",()=>{
+// btn.addEventListener("click",()=>{
 
-    if(name.value==="")return
-    const li=document.createElement("li")
-    const dlt=document.createElement("button")
-
-
-    dlt.innerText="Delete"
-    li.innerText=name.value;
+//     if(name.value==="")return
+//     const li=document.createElement("li")
+//     const dlt=document.createElement("button")
 
 
-    dlt.addEventListener("click",()=>{
-        list.removeChild(li)
-    })
+//     dlt.innerText="Delete"
+//     li.innerText=name.value;
 
 
-    list.appendChild(li)
-    li.appendChild(dlt)
+//     dlt.addEventListener("click",()=>{
+//         list.removeChild(li)
+//     })
+
+
+//     list.appendChild(li)
+//     li.appendChild(dlt)
 
     
-    name.value=""
-})
+//     name.value=""
+// })
+
+
+
+// function greet(){ // callback function
+//     setTimeout(() => {
+//     console.log("Hello students!")
+// }, 2000)
+//     print(45)
+// }
+
+// function print(num){ //higher order function
+//     console.log("total students are ",num)
+// }
+// greet(print)
+
+
+
+
+// console.log("Starting homework...");
+
+// setTimeout(() => {
+
+// console.log ("Homework done!");
+
+// console.log("Starting dinner...");
+
+// setTimeout(() => {
+
+// console.log("Dinner done!");
+
+// console.log("Getting ready to go out...");
+
+// setTimeout(() => {
+
+// console.log("Going to the playground!");
+
+// }, 1000); // after dinner
+
+// }, 1500); // dinner time
+
+// }, 2000); // homework time
+
+// function finishHomework(callback) {
+// console.log("Starting homework...");
+// setTimeout(() => {
+//     console.log("Homework done!");
+//     callback();
+// }, 2000);
+// }
+
+
+
+
+
+// function finishHomework(callback) {
+
+// }
+
+// console.log("Starting homework...");
+
+// setTimeout(() => { callback();
+
+// console.log("Homework done!");
+
+// }, 2000);
+
+// function eatDinner (callback) {
+
+// console.log("Starting dinner...");
+
+// } setTimeout(() => { console.log("Dinner done!"); callback();
+
+// }, 1500);
+
+// function goToPlayground() {
+
+// console.log("Going to the playground!"); }
+
+// // Chained in steps, but cleaner
+
+// finishHomework(() => {
+
+// eatDinner(() => { goToPlayground(); });
+
+// });
+
+
+// const p = new Promise((res,rej)=>{
+//     let done=false
+//     setTimeout(()=>{
+//         if(done){
+//             res("work is done!!")
+//         }else{
+//             rej("work is not done")
+//         }
+//     },5000)
+// })
+// console.log(p)
