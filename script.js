@@ -324,3 +324,65 @@
 //     },5000)
 // })
 // console.log(p)
+
+
+
+// function doHomework(){
+//     const p = new Promise((resolve,reject) =>{
+//         setTimeout(() => {
+//             let homeworkDone = true;
+//             if (homeworkDone){
+//                 console.log("homework is done");
+//                 resolve("homework complete");
+//             } else {
+//                 reject("homework not done");
+//             }
+//         },2000);
+//     });
+// }
+
+
+// function eatDinner(){
+//     const p=new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             let done=true
+//             if(done){
+//                 console.log("dinner is done")
+//                 res("dinner is complete")
+//             }else{
+//                 rej("dinner not complete")
+//             }
+//             },2000)
+//         })
+//         return p    
+//      }
+
+
+// function goToPlayground(){
+//     const p=new Promise((res,rej) =>{
+//         setTimeout(()=>{
+//             let done=true
+//             if(done){
+//                 console.log("went to playground")
+//                 res("playground time")
+//             }else{
+//                 rej("not allowed")
+//             }
+//         },2000)
+//     })
+//     return p
+// }
+
+
+// doHomework().then((msg)=>{
+//     console.log(msg)
+//     return eatDinner()
+// }).then((msg)=>{
+//     console.log(msg)
+// }).catch((err)=>{
+//     console.log(err)
+// }).finally(()=>{
+//     console.log("go to sleep")
+// })
+
+
