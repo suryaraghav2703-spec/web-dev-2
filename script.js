@@ -386,3 +386,49 @@
 // })
 
 
+
+function orderFood(){
+    return new Promise((res,rej)=>{
+        setTimeout(()=>{
+            console.log("food ordered")
+            res()
+        },2000)
+    })
+}
+
+function prepareFood(){
+    return new Promise((res,rej)=>{
+        setTimeout(()=>{
+            console.log("food prepared")
+            res()
+        },2000)
+    })
+}
+
+function deliverFood(){
+    return new Promise((res,rej)=>{
+        setTimeout(()=>{
+            console.log("food Deliverd")
+            res()
+        },2000)
+    })
+}
+
+async function order(){
+    const data = await orderFood()
+    console.log(data)
+    await prepareFood()
+    await deliverFood()
+}
+
+order()
+
+// orderFood().then((data)=>{
+//     return prepareFood()
+// }).then((data)=>{
+//     return deliverFood()
+// }).then((data)=>{
+// }).catch((err)=>{
+//     console.log("something went wrong")
+// })
+
