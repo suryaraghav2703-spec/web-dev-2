@@ -432,3 +432,34 @@
 //     console.log("something went wrong")
 // })
 
+
+// console.log("first line")
+// try{
+//     let sample = 234
+//     console.log(sample)
+//     let age = 16
+//     if(age<16){
+//         throw new error("you are not eligible to vote")
+//         // console.log("line after sample")
+//         //
+//         //
+//     }
+//     /////
+//     console.log("line after sample")
+// }catch(e){
+//     console.warn(e)
+//     console.error(e)
+//     console.log(e)
+// }
+// console.log("last line")
+
+
+// async function getData(){
+//     const response=await fetch("PUT ANY URL HERE")
+//     const data=await response.json()
+//     //console.log(datsa.products[0].title)
+//     data.products.forEach((product)=>{
+//         console.log(product.title)
+//     })
+// }
+// getData()
