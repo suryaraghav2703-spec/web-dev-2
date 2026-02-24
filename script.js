@@ -455,7 +455,7 @@
 
 
 // async function getData(){
-//     const response=await fetch("PUT ANY URL HERE")
+//     const response=await fetch("https://dummyjson.com/products")
 //     const data=await response.json()
 //     //console.log(datsa.products[0].title)
 //     data.products.forEach((product)=>{
@@ -463,3 +463,58 @@
 //     })
 // }
 // getData()
+
+
+// async function getData(){
+//     try{
+//         const response=await fetch("https://dummyjson.com/products")
+//         if(response.ok===false){
+//             throw new Error("something went wrong")
+//         }
+//     const data=await response.json()
+//     console.log(data)
+//     //console.log(datsa.products[0].title)
+//     data.products.forEach((product)=>{
+//         console.log(product.title)
+//     })
+// }catch(err){
+//     console.log(err)
+// }
+// }
+// getData()
+
+
+// function* generate(){
+//     // yield 1
+//     // yield 2
+//     // yield 3
+//     let index=25017343
+//     while(true){
+//         yield index
+//         index++
+//     }
+// }
+
+// const gen=generate()
+// console.log(gen)
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
+
+// function add(a){
+//     return function(b){
+//         return function(c){
+//             return a+b+c
+//         }
+//     }
+// }
+// const first=add(1)
+// console.log(first)
+// const second=first(2)
+// console.log(second)
+// console.log(second(3))
+
+// console.log(add(1)(2)(3))
+
+
